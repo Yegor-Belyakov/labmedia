@@ -28,6 +28,10 @@ color: #9eaab4;
   color: black;
  
 }
+.tableHeaderButton button:active {
+  color: white;
+ 
+}
 
 
 .table_wrapper {
