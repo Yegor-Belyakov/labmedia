@@ -1,0 +1,71 @@
+.tableHeader {
+  margin-top: 72px;
+  align-self: flex-end;
+margin-left: 27px;
+  display: flex;
+align-items: center;
+}
+
+.tableHeader h6 {
+
+  color: #9eaab4;
+  size: 12px;
+  font-weight: 500;
+}
+
+.tableHeaderButton {
+
+  margin-left: 8px;
+}
+.tableHeaderButton button {
+margin-bottom: 6px;
+color: #9eaab4;
+  border: none;
+  background: #f7f7f7;
+  
+}
+.tableHeaderButton button:hover {
+  color: black;
+ 
+}
+
+
+.table_wrapper {
+margin-top: 15px;
+width: 961px;
+height: 384px;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-left: 27px;
+}
+
+
+.table_tr {
+  color: #9eaab4;
+  font-size: 12px;
+  text-align: left;
+}
+
+
+.username {
+
+  color: #0cb4f1;
+  font-weight: 700;
+  text-align: left;
+}
+
+.email {
+  text-align: left;
+}
+
+.registration_date {
+  text-align: left;
+}
+
+.rating {
+  text-align: left;
+}
+
+.closeIcon {
+  margin-right: 20px;
+}
