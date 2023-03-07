@@ -1,6 +1,6 @@
 import React from "react";
 import _ from "lodash";
-import './pagination.css'
+import "./pagination.css";
 
 function Pagination({ usersCount, pageSize, onPageChange, currentPage }) {
   const pageCount = Math.ceil(usersCount / pageSize);
@@ -8,7 +8,7 @@ function Pagination({ usersCount, pageSize, onPageChange, currentPage }) {
   const pages = _.range(1, pageCount + 1);
 
   return (
-    <nav >
+    <nav>
       <ul className="pagination">
         {pages.map((page) => (
           <li

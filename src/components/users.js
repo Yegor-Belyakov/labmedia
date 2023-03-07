@@ -5,7 +5,7 @@ import InputSearch from "./inputSearch";
 import TableUsers from "./table";
 import _ from "lodash";
 import Pagination from "./pagination";
-import './user.css'
+import "./user.css";
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -57,9 +57,11 @@ function Users() {
 
   const usersCount = filtredUsers.length;
   const pageSize = 5;
+
   const onPageChange = (pageIndex) => {
     setCurrentPage(pageIndex);
   };
+  
   const paginate = (users, currentPage, pageSize) => {
     const startIndex = (currentPage - 1) * pageSize;
     return [...users].splice(startIndex, pageSize);
@@ -71,10 +73,7 @@ function Users() {
 
   return (
     <div>
-      <div className="header">
-        
-        Список пользователей
-      </div>
+      <div className="header">Список пользователей</div>
 
       <InputSearch
         searchValue={searchValue}

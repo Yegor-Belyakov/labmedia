@@ -1,5 +1,7 @@
 import React from "react";
-import './inputSearch.css'
+import "./inputSearch.css";
+import cleanIcon from '../img/clean.svg'
+
 
 function InputSearch({
   searchValue,
@@ -18,13 +20,14 @@ function InputSearch({
         <input
           value={searchValue}
           onChange={(e) => searchHandler(e)}
-         
           placeholder="    Поиск по имени или e-mail"
         ></input>
       </div>
       <div className="btn">
-        {(searchValue || sortBy.iter) && (
-          <button onClick={buttonClear}>Очистить фильтр</button>
+        {(searchValue || sortBy.iter) && (<>
+          <img src={cleanIcon} alt='cleanIcon'></img> <button onClick={buttonClear}>Очистить фильтр</button>
+        </>
+      
         )}
       </div>
     </div>
