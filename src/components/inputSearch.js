@@ -18,7 +18,7 @@ function InputSearch({
   return (
     <div className="wrapper">
       <div className="input">
-        <img className="search_icon" src={searchIcon} alt='searchIcon'></img><input
+       {!searchValue && <img className="search_icon" src={searchIcon} alt='searchIcon'></img>} <input
           value={searchValue}
           onChange={(e) => searchHandler(e)}
           placeholder="        Поиск по имени или e-mail"

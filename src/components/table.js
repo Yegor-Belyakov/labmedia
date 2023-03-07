@@ -61,7 +61,7 @@ function TableUsers({
             </tr>
           </thead>
           <tbody>
-            {filtredUsers.map((user) => (
+            {filtredUsers.length > 0 ? filtredUsers.map((user) => (
               <tr key={user.id}>
                 <td className="username">{user.username}</td>
                 <td className="email">{user.email}</td>
@@ -80,7 +80,7 @@ function TableUsers({
                   ></img>
                 </td>
               </tr>
-            ))}
+            )) : <h3>Ничего не найдено...</h3>}
             <tr></tr>
           </tbody>
         </table>
